@@ -98,3 +98,4 @@ https://res.cloudinary.com/craigsims808/image/upload/v1684746912/articles/oracle
 https://res.cloudinary.com/craigsims808/image/upload/v1684746912/articles/oracle-medusa/click-create_sjiglv.png
 https://res.cloudinary.com/craigsims808/image/upload/v1684746912/articles/oracle-medusa/change-image-and-shape_jxc5ag.png
 
+vm running

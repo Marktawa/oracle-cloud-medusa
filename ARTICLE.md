@@ -80,7 +80,7 @@ Click on **Networking** in the navigation menu and select **Virtual cloud networ
 
 Select the **Medusa** compartment you have just created from the compartment list on the left.
 
-![Select Medusa Compartment]()
+![Select Medusa Compartment](https://res.cloudinary.com/craigsims808/image/upload/v1684746915/articles/oracle-medusa/select-medusa-compartment_dpvs7g.png)
 
 For more information check out these [instructions on Choosing and Creating a Compartment for your project](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/choosingcompartments.htm#Choosing_a_Compartment).
 
@@ -88,11 +88,11 @@ For more information check out these [instructions on Choosing and Creating a Co
 
 Select **Start VCN Wizard**
 
-![Select Start VCN Wizard]()
+![Select Start VCN Wizard](https://res.cloudinary.com/craigsims808/image/upload/v1684746914/articles/oracle-medusa/select-start-vcn-wizard_z2kp8l.png)
 
 Click **Create VCN with Internet Connectivity**, and then click **Start VCN Wizard**
 
-![Create VCN with Internet Connectivity]()
+![Create VCN with Internet Connectivity](https://res.cloudinary.com/craigsims808/image/upload/v1684746912/articles/oracle-medusa/create-vcn-with-internet-connectivity_zquzqm.png)
 
 Enter these details:
 - **VCN Name**: medusa
@@ -102,15 +102,13 @@ Enter these details:
 - **Private Subnet CIDR Block**: 10.0.1.0/24
 - Leave all the other details as is.
 
-![Pre Details for VCN]()
-
 Select **Next**. 
 
-![Details for VCN]()
+![Details for VCN](https://res.cloudinary.com/craigsims808/image/upload/v1684746913/articles/oracle-medusa/details-for-vcn_yofjhe.png)
 
 Review the details for your VCN and click on **Create**. Wait for a few seconds for your VCN to be created, then select **View VCN**.
 
-![View Virtual Cloud Network]()
+![View Virtual Cloud Network](https://res.cloudinary.com/craigsims808/image/upload/v1684746915/articles/oracle-medusa/view-virtual-cloud-network_xjkodl.png)
 
 For more information check out [Creating a Virtual Cloud Network](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/creatingnetwork.htm#Creating_a_Virtual_Cloud_Network)
 
@@ -118,15 +116,15 @@ For more information check out [Creating a Virtual Cloud Network](https://docs.o
 
 Select **Instances** under **Compute** in the navigation menu of your Oracle Dashboard
 
-![select instances in nav menu]()
+![select instances in nav menu](https://res.cloudinary.com/craigsims808/image/upload/v1684746914/articles/oracle-medusa/select-instances-in-nav-menu_eec1da.png)
 
 Click **Create Instance** to take you to the **Create compute instance** page.
 
-![create instance]()
+![create instance](https://res.cloudinary.com/craigsims808/image/upload/v1684746913/articles/oracle-medusa/click-create-instance_rrlnh2.png)
 
 Enter the name `medusa-server` for your instance and the compartment should be `Medusa`.
 
-![name and  compartment]()
+![name and  compartment](https://res.cloudinary.com/craigsims808/image/upload/v1684746913/articles/oracle-medusa/name-and-compartment_sr5rlv.png)
 
 For the **Placement** section, leave the default **Availability domain** as is.
 
@@ -136,7 +134,7 @@ The following **Image and shape** section details should be added:
 
 Follow these [instructions](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/launchinginstance.htm#Launching_a_Linux_Instance:~:text=In%20the%20Image%20and%20shape%20section%2C%20make%20the%20following%20selections%3A) to change the image and shape for your `medusa-server` VM.
 
-![final image and shape]()
+![final image and shape](https://res.cloudinary.com/craigsims808/image/upload/v1684746912/articles/oracle-medusa/change-image-and-shape_jxc5ag.png)
 
 For the **Networking** section, add the following configurations:
 - **Primary network**: `Select existing virtual cloud network`
@@ -145,19 +143,19 @@ For the **Networking** section, add the following configurations:
 - **Subnet in `medusa`**: `medusa`
 - Select **Assign a public IPv4 address**
 
-![networking section]()
+![networking section](https://res.cloudinary.com/craigsims808/image/upload/v1684746913/articles/oracle-medusa/networking-options_qbjrm4.png)
 
 In the **Add SSH key** section:
 
 - Choose **Generate a key pair for me**
 
-![generate key pair]()
+![generate key pair](https://res.cloudinary.com/craigsims808/image/upload/v1684746913/articles/oracle-medusa/generate-key-pair_yo3p2c.png)
 
 OCI will generate an SSH key for your instance
 
 - Select **Save Private Key** to save the private key in your computer as a `.key` file.
 
-![save private key]()
+![save private key](https://res.cloudinary.com/craigsims808/image/upload/v1684746914/articles/oracle-medusa/save-private-key_tybj36.png)
 
 If you prefer other options for establishing an SSH connection use [these instructions](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/launchinginstance.htm#Launching_a_Linux_Instance:~:text=Upload%20public%20key%20files%20(.pub))
 
@@ -165,11 +163,11 @@ For the **Boot volume** section, leave the default options.
 
 Click **Create** and wait for your instance to be provisioned.
 
-![click create]()
+![click create](https://res.cloudinary.com/craigsims808/image/upload/v1684746912/articles/oracle-medusa/click-create_sjiglv.png)
 
 Wait for a few minutes for your instance to be created and you will see it the Console. When the status of the instance has changed to `RUNNING` you can now connect to it.
 
-![vm running]()
+![vm running](https://res.cloudinary.com/craigsims808/image/upload/v1684755320/articles/oracle-medusa/vm_running_zz5gcg.png)
 
 For more information check out [Launching a Linux Instance](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/launchinginstance.htm#Launching_a_Linux_Instance) in the Oracle Cloud Documentation.
 
@@ -177,7 +175,7 @@ For more information check out [Launching a Linux Instance](https://docs.oracle.
 
 Note down the **Public IP address** and **Username** for your running instance.
 
-![ip address for instance]()
+![ip address for instance](https://res.cloudinary.com/craigsims808/image/upload/v1684755320/articles/oracle-medusa/vm_details_amrggp.png)
 
 Follow these instructions to apply the appropriate permissions to your SSH private key so that you only you can read it:
 - [Unix-Style System](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/testingconnection.htm#connecting__linux-from-unix)
@@ -197,7 +195,7 @@ Where:
 
 If your SSH connection is successful, you should be logged in to your medusa server instance as the default `ubuntu` user.
 
-![successful ssh login]()
+![successful ssh login](https://res.cloudinary.com/craigsims808/image/upload/v1684755320/articles/oracle-medusa/successful-ssh-connection_w7ofcz.png)
 
 ## PART B: Set up and Configure Environment
 
@@ -235,7 +233,7 @@ Configure the global `username` and `email` for your [Git Identity](https://git-
 
 ## Step 8: Setup Medusa CLI
 
-Install the [Medusa CLI]() to manage your Medusa server.
+Install the [Medusa CLI](https://docs.medusajs.com/cli/reference) to manage your Medusa server.
 
 ```bash
 npm install @medusajs/medusa-cli -g
@@ -297,7 +295,7 @@ exit
 
 ## Step 10: Setup Medusa app on local machine
 
-Create a [GitHub repository]() to store your Medusa server app and [clone it]() to your local machine.
+Create a [GitHub repository](https://github.com/new) to store your Medusa server app and [clone it](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to your local machine.
 
 In the work folder of the GitHub repo, set up a Medusa server app using the [Medusa Server Quickstart Guide](https://docs.medusajs.com/development/backend/install) instructions.
 
@@ -366,6 +364,10 @@ DATABASE_TYPE=postgres
 DATABASE_URL=postgres://medusa_admin:medusa_admin_password@localhost:5432/medusa_db
 ```
 
+> **NOTE:**
+>
+> Use other values for `JWT_SECRET` and `COOKIE_SECRET` besides `something` for better security.
+
 Seed your database.
 
 ```bash
@@ -389,15 +391,15 @@ In this step you will add an ingress rule to the `medusa` subnet to allow intern
 
 Go to your Oracle Cloud console, open the navigation menu and select **Networking** and click on **Virtual Cloud Networks**.
 
-![Select Virtual Cloud Networks]()
+![Select Virtual Cloud Networks](https://res.cloudinary.com/craigsims808/image/upload/v1684746915/articles/oracle-medusa/select-vcn-nav-menu_josftr.png)
 
 Select the `medusa` VCN.
 
-![Select medusa vcn]
+![Select medusa vcn](https://res.cloudinary.com/craigsims808/image/upload/v1684746915/articles/oracle-medusa/select-medusa-vcn_ckuuhy.png)
 
 Select **Security List** link and click on the **Default Security List for medusa** link.
 
-![Select Default Security List]()
+![Select Default Security List](https://res.cloudinary.com/craigsims808/image/upload/v1684746914/articles/oracle-medusa/select-default-security-list_hx75zv.png)
 
 Select **Add Ingress Rules** to display the **Add Ingress Rules** modal. Fill in the ingress rule as follows:
 - **Stateless**: `Checked`
@@ -408,11 +410,11 @@ Select **Add Ingress Rules** to display the **Add Ingress Rules** modal. Fill in
 - **Destination Port Range**: `9000`
 - **Description**: `Allow HTTP connections`
 
-![Add Ingress Rules]()
+![Add Ingress Rules](https://res.cloudinary.com/craigsims808/image/upload/v1684746914/articles/oracle-medusa/select-add-ingress-rules_xtsjij.png)
 
 Click **Add Ingress Rules**. Now your server is accessible via HTTP.
 
-![List of Ingress Rules]()
+![List of Ingress Rules](https://res.cloudinary.com/craigsims808/image/upload/v1684746913/articles/oracle-medusa/list-of-ingress-rules_wn0jsq.png)
 
 
 ## Step 14: Configure Ubuntu Firewall
@@ -430,20 +432,20 @@ sudo netfilter-persistent save
 
 Visit `http://x.x.x.x:9000/health` in your browser, where `x.x.x.x` is your server's IP address. You should see an `OK` message. This confirms that your server is working.
 
-![health check]()
+![health check](https://res.cloudinary.com/craigsims808/image/upload/v1684755319/articles/oracle-medusa/health-check_wwfpfq.png)
 
-Visit `http://x.x.x.x:9000/store/products` and you should see a list of your products in your database.
+Visit `http://x.x.x.x:9000/store/products` and you should see a list of products in your database.
 
-![products check]()
+![products check](https://res.cloudinary.com/craigsims808/image/upload/v1684755320/articles/oracle-medusa/products-check_ctkes1.png)
 
 ## Considerations
 
 This tutorial showcased a minimal way of deploying a Medusa server on Oracle Cloud. Here are some additional configurations you can make:
 
-- Install the [MinIO](https://docs.medusajs.com/plugins/file-service/minio) plugin to handle image uploads to your Medusa backend.
-- Install Redis if you want scheduled jobs.
-- Install PM2 to manage and ensure availability of your Medusa server.
-- Install Nginx to configure a domain name.
+- [Install the MinIO plugin](https://docs.medusajs.com/plugins/file-service/minio) to handle image uploads to your Medusa backend.
+- [Install](https://redis.io/docs/getting-started/installation/) and [configure Redis](https://docs.medusajs.com/development/backend/configurations#redis) if you want scheduled jobs.
+- [Install PM2](https://pm2.io/docs/runtime/guide/installation/) to manage and ensure availability of your Medusa server.
+- [Install Nginx](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/) to configure a domain name.
 - Add an SSL certificate for your domain name.
 - Change the URL in your Medusa storefront and/or admin based on the URL of your server.
 - Update your Medusa server with the Admin and storefront URLs.
@@ -452,7 +454,9 @@ This tutorial showcased a minimal way of deploying a Medusa server on Oracle Clo
 
 ## Conclusion
 
-Oracle Cloud Free Tier provides a convenient way for developers to test and deploy Medusa ecommerce apps. I hope this tutorial has provided sufficient knowledge on how you could host a Medusa server app. If there are any issues or questions, feel free to comment with your query.
+Oracle Cloud Free Tier provides a convenient way for developers to test and deploy Medusa ecommerce apps. I hope this tutorial has provided sufficient knowledge on how you could host a Medusa server app on Oracle Cloud.
+
+If there are any issues or questions, feel free to comment with your query.
 
 
 

@@ -1,0 +1,4 @@
+vm running
+successful ssh login
+health check
+products check
